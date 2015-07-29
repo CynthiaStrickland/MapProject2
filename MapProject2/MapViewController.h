@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  MapProject2
 //
 //  Created by Cynthia Whitlatch on 7/29/15.
@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MapViewController : UIViewController
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
-
