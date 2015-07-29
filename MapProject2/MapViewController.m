@@ -8,10 +8,13 @@
 
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
+#import <CoreLocation/CoreLocation.h>
 
 @interface MapViewController () <CLLocationManagerDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
 @end
 
 @implementation MapViewController
@@ -19,10 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    self.title = @"Map";
-    
-    self.mapView.delegate = self;
+    _mapView.showsUserLocation = YES;
     
     self.locationManager = [[CLLocationManager alloc]init];
     self.locationManager.delegate = self;
@@ -32,6 +32,12 @@
     }
     
     [self.locationManager startUpdatingLocation];
+    
+    [[self locationManager] setDesiredAccuracy:kCLLocationAccuracyBest];
+    [[self locationManager] startUpdatingLocation];
+    
+    [_mapView setMapType:MKMapTypeStandard];
+    [_mapView setZoomEnabled:YES];
 
 }
 

@@ -22,9 +22,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="K6p-0b-CCD"/>
+                    <navigationItem key="navigationItem" id="K6p-0b-CCD">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="d6X-kC-h89"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="7Ef-E4-vze"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="Outlet" destination="4jM-GD-F6f" id="eEk-ZG-3u3"/>
+                        <outlet property="mapView" destination="4jM-GD-F6f" id="Vnl-nk-EwU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zsu-BZ-f90" userLabel="First Responder" sceneMemberID="firstResponder"/>
