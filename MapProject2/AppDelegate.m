@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import <CoreData/CoreData.h>
+#import "MapViewController.h"
+#import "CategoryViewController.h"
+#import "PointOfInterest.h"
+#import <MapKit/MapKit.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +21,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    UINavigationController *nav = (UINavigationController *) self.window.rootViewController;    //Grabs Navigation Controller
+    MapViewController *mapVC = (MapViewController *)nav.topViewController;                      //Grabs MapViewController topview
+    mapVC.managedObjectContext = self.managedObjectContext;                                     //Passes a reference to Managed Object Context
+    
     return YES;
 }
 

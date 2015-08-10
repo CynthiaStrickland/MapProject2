@@ -11,4 +11,11 @@
 
 @interface MapViewController : UIViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (IBAction)search:(id)sender;
+- (IBAction)favs:(id)sender;
+
 @end

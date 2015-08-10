@@ -17,6 +17,12 @@
 		3D6E72F21B69381F002AFB1F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6E72F11B69381F002AFB1F /* MapKit.framework */; };
 		3D6E72F41B69382B002AFB1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6E72F31B69382B002AFB1F /* CoreData.framework */; };
 		3D6E72FB1B69390A002AFB1F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E72FA1B69390A002AFB1F /* MapViewController.m */; };
+		3D6E73041B695AD6002AFB1F /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E73031B695AD6002AFB1F /* SearchViewController.m */; };
+		3D6E730D1B695EB2002AFB1F /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E730C1B695EB2002AFB1F /* CategoryViewController.m */; };
+		3D6E73101B696906002AFB1F /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E730F1B696906002AFB1F /* DataSource.m */; };
+		3D6E73131B696C5C002AFB1F /* PointOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E73121B696C5C002AFB1F /* PointOfInterest.m */; };
+		3D6E73161B6B39AC002AFB1F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E73151B6B39AC002AFB1F /* DetailViewController.m */; };
+		3D6E73191B6C2C55002AFB1F /* FavsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E73181B6C2C55002AFB1F /* FavsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,18 @@
 		3D6E72F31B69382B002AFB1F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		3D6E72F91B69390A002AFB1F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		3D6E72FA1B69390A002AFB1F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		3D6E73021B695AD6002AFB1F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		3D6E73031B695AD6002AFB1F /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		3D6E730B1B695EB2002AFB1F /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		3D6E730C1B695EB2002AFB1F /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		3D6E730E1B696906002AFB1F /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		3D6E730F1B696906002AFB1F /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		3D6E73111B696C5C002AFB1F /* PointOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointOfInterest.h; sourceTree = "<group>"; };
+		3D6E73121B696C5C002AFB1F /* PointOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfInterest.m; sourceTree = "<group>"; };
+		3D6E73141B6B39AC002AFB1F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3D6E73151B6B39AC002AFB1F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3D6E73171B6C2C55002AFB1F /* FavsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavsTableViewController.h; sourceTree = "<group>"; };
+		3D6E73181B6C2C55002AFB1F /* FavsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,7 @@
 		3D6E72BC1B69367C002AFB1F = {
 			isa = PBXGroup;
 			children = (
+				3D6E72D51B69367C002AFB1F /* Main.storyboard */,
 				3D6E72C71B69367C002AFB1F /* MapProject2 */,
 				3D6E72E41B69367C002AFB1F /* MapProject2Tests */,
 				3D6E72C61B69367C002AFB1F /* Products */,
@@ -91,9 +110,20 @@
 			children = (
 				3D6E72CC1B69367C002AFB1F /* AppDelegate.h */,
 				3D6E72CD1B69367C002AFB1F /* AppDelegate.m */,
+				3D6E730B1B695EB2002AFB1F /* CategoryViewController.h */,
+				3D6E730C1B695EB2002AFB1F /* CategoryViewController.m */,
+				3D6E730E1B696906002AFB1F /* DataSource.h */,
+				3D6E730F1B696906002AFB1F /* DataSource.m */,
+				3D6E73141B6B39AC002AFB1F /* DetailViewController.h */,
+				3D6E73151B6B39AC002AFB1F /* DetailViewController.m */,
+				3D6E73171B6C2C55002AFB1F /* FavsTableViewController.h */,
+				3D6E73181B6C2C55002AFB1F /* FavsTableViewController.m */,
 				3D6E72F91B69390A002AFB1F /* MapViewController.h */,
 				3D6E72FA1B69390A002AFB1F /* MapViewController.m */,
-				3D6E72D51B69367C002AFB1F /* Main.storyboard */,
+				3D6E73111B696C5C002AFB1F /* PointOfInterest.h */,
+				3D6E73121B696C5C002AFB1F /* PointOfInterest.m */,
+				3D6E73021B695AD6002AFB1F /* SearchViewController.h */,
+				3D6E73031B695AD6002AFB1F /* SearchViewController.m */,
 				3D6E72D81B69367C002AFB1F /* Images.xcassets */,
 				3D6E72DA1B69367C002AFB1F /* LaunchScreen.xib */,
 				3D6E72CF1B69367C002AFB1F /* MapProject2.xcdatamodeld */,
@@ -239,9 +269,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6E730D1B695EB2002AFB1F /* CategoryViewController.m in Sources */,
+				3D6E73191B6C2C55002AFB1F /* FavsTableViewController.m in Sources */,
 				3D6E72CE1B69367C002AFB1F /* AppDelegate.m in Sources */,
+				3D6E73101B696906002AFB1F /* DataSource.m in Sources */,
 				3D6E72CB1B69367C002AFB1F /* main.m in Sources */,
+				3D6E73131B696C5C002AFB1F /* PointOfInterest.m in Sources */,
+				3D6E73161B6B39AC002AFB1F /* DetailViewController.m in Sources */,
 				3D6E72D11B69367C002AFB1F /* MapProject2.xcdatamodeld in Sources */,
+				3D6E73041B695AD6002AFB1F /* SearchViewController.m in Sources */,
 				3D6E72FB1B69390A002AFB1F /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +307,7 @@
 				3D6E72D61B69367C002AFB1F /* Base */,
 			);
 			name = Main.storyboard;
+			path = MapProject2;
 			sourceTree = "<group>";
 		};
 		3D6E72DA1B69367C002AFB1F /* LaunchScreen.xib */ = {
@@ -439,6 +476,7 @@
 				3D6E72ED1B69367C002AFB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D6E72EE1B69367C002AFB1F /* Build configuration list for PBXNativeTarget "MapProject2Tests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +485,7 @@
 				3D6E72F01B69367C002AFB1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
